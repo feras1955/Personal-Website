@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ali Designer | تواصل</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/jpeg" href="../../صور/شعار.jpg" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a class="brand" href="index.html"><img src="../../صور/شعار.jpg" alt="Ali Designer logo" onerror="this.style.display='none'" /><span>Ali Designer</span></a>
+      <nav class="nav-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="works.html">الأعمال والمهارات</a>
+        <a href="products.html">المنتجات</a>
+        <a href="contact.html" class="active">تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-padding">
+    <section class="contact">
+      <h2 class="section-title"><i class="fa-solid fa-envelope"></i> تواصل معي</h2>
+      <form class="form" action="#" method="post" onsubmit="event.preventDefault(); alert('تم إرسال النموذج بنجاح!');">
+        <div class="form-row">
+          <label for="name">الاسم</label>
+          <input id="name" name="name" type="text" placeholder="اكتب اسمك" required />
+        </div>
+        <div class="form-row">
+          <label for="email">البريد الإلكتروني</label>
+          <input id="email" name="email" type="email" placeholder="example@mail.com" required />
+        </div>
+        <div class="form-row">
+          <label for="hobby">الهواية المفضلة</label>
+          <input id="hobby" name="hobby" type="text" placeholder="مثل: القراءة، التصميم، البرمجة" />
+        </div>
+        <div class="form-row">
+          <span class="label">النوع</span>
+          <label class="radio"><input type="radio" name="type" value="visitor" checked /> زائر</label>
+          <label class="radio"><input type="radio" name="type" value="member" /> عضو</label>
+        </div>
+        <div class="form-actions">
+          <button class="btn primary" type="submit"><i class="fa-solid fa-paper-plane"></i> إرسال</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="brand-line"><img src="../../صور/شعار.jpg" alt="Ali Designer logo" width="36" height="36" onerror="this.style.display='none'" /><span>Ali Designer</span></div>
+          <p class="lead" style="margin:8px 0 0; color:var(--muted)">مصمم جرافيك أصمم هويات بصرية ومواد تسويقية: شعارات، بوسترات، قوالب سوشيال وعروض تقديمية.</p>
+          <div class="social">
+            <a aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61578360051466" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a aria-label="Instagram" href="https://www.instagram.com/ad81r/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a aria-label="LinkedIn" href="/"><i class="fab fa-linkedin"></i></a>
+            <a aria-label="Twitter" href="/"><i class="fab fa-x-twitter"></i></a>
+            <a aria-label="WhatsApp" href="/"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="works.html">الأعمال والمهارات</a></li>
+            <li><a href="products.html">المنتجات</a></li>
+            <li><a href="contact.html">تواصل</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>تواصل</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:ah5186223@gmail.com">ah5186223@gmail.com</a></li>
+            <li><a href="https://wa.me/972597658037" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Ali Designer. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
